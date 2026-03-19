@@ -6,16 +6,21 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #0f172a;
-  background:
-    radial-gradient(circle at top, #dbeafe 0%, #eff6ff 35%, #f8fafc 100%);
-  min-height: 100vh;
+  background: linear-gradient(180deg, #dbeafe 0%, #f8fafc 100%);
+}
+
+.page {
+  width: min(960px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 72px;
 }
 
 .hero {
-  width: min(960px, calc(100% - 32px));
-  margin: 0 auto;
-  padding: 72px 0;
   text-align: center;
+  padding: 56px 24px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
 }
 
 .eyebrow {
@@ -36,55 +41,83 @@ h1 {
   margin: 20px auto 0;
   font-size: 20px;
   line-height: 1.7;
-  color: #334155;
+  color: #475569;
 }
 
 .actions {
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
 .button {
   display: inline-block;
   margin: 8px;
-  padding: 14px 24px;
+  padding: 14px 22px;
   border-radius: 12px;
   text-decoration: none;
   font-weight: bold;
 }
 
 .primary {
-  background-color: #2563eb;
+  background: #2563eb;
   color: white;
 }
 
 .secondary {
-  background-color: white;
+  background: #eff6ff;
   color: #2563eb;
-  border: 2px solid #bfdbfe;
+}
+
+.section {
+  margin-top: 32px;
+  padding: 32px 24px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.06);
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.section p {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.skills span {
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: bold;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
-  margin-top: 56px;
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 24px;
+  padding: 20px;
   border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
-  text-align: left;
+  background: #f8fafc;
+  border: 1px solid #dbeafe;
 }
 
-.card h2 {
+.card h3 {
   margin-top: 0;
   color: #1d4ed8;
 }
 
 .card p {
   margin-bottom: 0;
-  color: #475569;
-  line-height: 1.6;
 }
